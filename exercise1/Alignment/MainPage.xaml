@@ -5,7 +5,7 @@
              x:Class="Alignment.MainPage">
 
     <Grid Padding="20" RowSpacing="10" RowDefinitions="50,50,*">
-
+        <!-- horizontal stack layout with buttons to change the horizontal alignment of the label -->
         <HorizontalStackLayout Grid.Row="0" Spacing="10">
             <Label Text="Horizontal" VerticalOptions="Center" />
             <Button Text="Start"  Clicked="OnHorizontalStartClicked"  />
@@ -13,14 +13,14 @@
             <Button Text="End"    Clicked="OnHorizontalEndClicked"    />
             <Button Text="Fill"   Clicked="OnHorizontalFillClicked"   />
         </HorizontalStackLayout>
-
-        <HorizontalStackLayout  Grid.Row="1" Spacing="10">
+        <!-- vertical stack layout with buttons to change the vertical alignment of the label -->
+        <VerticalStackLayout  Grid.Row="1" Spacing="10">
             <Label Text="Vertical" VerticalOptions="Center" />
             <Button Text="Start"  Clicked="OnVerticalStartClicked"  />
             <Button Text="Center" Clicked="OnVerticalCenterClicked" />
             <Button Text="End"    Clicked="OnVerticalEndClicked"    />
             <Button Text="Fill"   Clicked="OnVerticalFillClicked"   />
-        </HorizontalStackLayout>
+        </VerticalStackLayout>
 
         <Label Grid.Row="2" FontSize="25" x:Name="target" BackgroundColor="Silver" Text="Hello" />
 
